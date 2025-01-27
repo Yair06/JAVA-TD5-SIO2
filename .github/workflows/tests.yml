@@ -5,7 +5,7 @@ name: JAVA TD 5 - Tests runners
 on:
   push:
     branches:
-      - test-xi
+      - correction
 jobs:
   run-test:
     name : Run Tests suite
@@ -27,4 +27,4 @@ jobs:
           java-version: ${{ matrix.java-version }}
           cache: 'maven'
       - name: Run tests with Maven
-        run: mvn -B test --file pom.xml
+        run: mvn -B test --file pom.xmla
